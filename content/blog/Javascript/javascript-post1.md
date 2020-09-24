@@ -6,7 +6,7 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-###es5 버전
+###es5 이하 버전
 
 ```javascript
 function getUniqueObjectArray(array, key) {
