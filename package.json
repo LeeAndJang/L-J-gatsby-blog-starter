@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-bee",
+  "name": "ramsbaby-gatsby-blog",
   "private": true,
   "description": "Gatsby blog starter template",
   "version": "0.1.0",
-  "author": "Jbee[JaeYeopHan]<ljyhanll@gmail.com>",
+  "author": "Ramsbaby[JungwooLee]<ms6698@naver.com>",
   "bugs": {
-    "url": "https://github.com/JaeYeopHan/gatsby-starter-bee/issues"
+    "url": "https://github.com/Ramsbaby/ramsbaby-blog-starter/issues"
   },
   "dependencies": {
     "gatsby": "^2.2.8",
@@ -74,7 +74,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JaeYeopHan/gatsby-starter-bee.git"
+    "url": "git+https://github.com/Ramsbaby/ramsbaby-blog-starter.git"
   },
   "scripts": {
     "post": "gatsby-post-gen",
