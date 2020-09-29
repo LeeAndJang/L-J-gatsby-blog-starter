@@ -1,1 +1,1 @@
-export const HOME_TITLE = 'Home'
+export const HOME_TITLE = 'Ramsbaby tech blog'
