@@ -4,10 +4,15 @@ date: 2019-1-27 16:21:13
 lang: 'en'
 ---
 
-# Your name
+# Ramsbaby (이정우)
 
-<div align="center">
+<div align="left">
 
-_Thank you for reading my resume. If you want to contact me, Please send me an email._
+안녕하세요 4년차 웹개발자로 활동중인 이정우라고 합니다.
+
+- 경남 하동 출신, 현재 송파구 거주중.
+- 세종대학교 컴퓨터공학 학사 졸업
+- 고용노동부 주관 웹/안드로이드 국비교육 참여
+- 가산 모 소프트웨어 회사에서 웹개발자로 근무중
 
 </div>
