@@ -1,5 +1,5 @@
 ---
-title: git 충돌났을때 강제로 Pull하기
+title: '[Git] git 충돌났을때 강제로 Pull하기'
 date: 2020-09-24 12:09:49
 category: Git
 thumbnail: { thumbnailSrc }
