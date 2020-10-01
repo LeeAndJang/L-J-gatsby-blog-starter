@@ -1,6 +1,6 @@
 ---
 title: '[React] (수정중) 리액트 입문 '
-date: 2020-09-24 12:09:49
+date: 2020-10-02 00:48:00
 category: React.js
 thumbnail: { thumbnailSrc }
 draft: false
