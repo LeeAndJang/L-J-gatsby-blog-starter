@@ -4,18 +4,6 @@ import './index.scss'
 import { Item } from './item'
 import ScrollMenu from 'react-horizontal-scrolling-menu'
 
-// const list = [
-//   { name: 'item1' },
-//   { name: 'item2' },
-//   { name: 'item3' },
-//   { name: 'item4' },
-//   { name: 'item5' },
-//   { name: 'item6' },
-//   { name: 'item7' },
-//   { name: 'item8' },
-//   { name: 'item9' }
-// ];
-
 // One item component
 // selected prop will be passed
 const MenuItem = ({ text, selected }) => {
@@ -35,8 +23,8 @@ const Arrow = ({ text, className }) => {
   return <div className={className}>{text}</div>
 }
 
-const ArrowLeft = Arrow({ text: '◀', className: 'arrow-prev' })
-const ArrowRight = Arrow({ text: '▶', className: 'arrow-next' })
+const ArrowLeft = Arrow({ text: '👈', className: 'arrow-prev' })
+const ArrowRight = Arrow({ text: '👉', className: 'arrow-next' })
 
 const selected = 'item1'
 
@@ -62,16 +50,8 @@ export const Category = ({ categories, category, selectCategory }) => {
     [containerRef]
   )
 
-  // state = {
-  //   selected,
-  // }
-
-  // onSelect = key => {
-  //   this.setState({ selected: key })
-  // }
   let list = categories.map((title, idx) => ({ name: title, key: idx }))
   list.unshift({ name: 'All' })
-
 
   const menu = Menu(list, selected)
 
