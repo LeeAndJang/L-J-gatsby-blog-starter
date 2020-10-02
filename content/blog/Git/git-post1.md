@@ -11,3 +11,10 @@ git fetch --all
 git reset --hard origin/master
 git pull origin master
 ```
+
+
+<br>
+<br>
+<br>
+
+####읽어주셔서 감사합니다.🖐
