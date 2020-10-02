@@ -7,10 +7,13 @@ import { Contents } from '../components/contents'
 import { Head } from '../components/head'
 import { HOME_TITLE } from '../constants'
 import { useCategory } from '../hooks/useCategory'
+import { useSearchWord } from '../hooks/useSearchWord'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
 import { useRenderedCount } from '../hooks/useRenderedCount'
 import { useScrollEvent } from '../hooks/useScrollEvent'
 import { Layout } from '../layout'
+import { Search } from '../components/search'
+
 import * as Dom from '../utils/dom'
 import * as EventManager from '../utils/event-manager'
 
@@ -30,6 +33,7 @@ export default ({ data, location }) => {
   )
   const [count, countRef, increaseCount] = useRenderedCount()
   const [category, selectCategory] = useCategory()
+  const [searchWord, inputSearchWord] = useSearchWord()
 
   useIntersectionObserver()
   useScrollEvent(() => {
@@ -48,6 +52,7 @@ export default ({ data, location }) => {
     <Layout location={location} title={siteMetadata.title}>
       <Head title={HOME_TITLE} keywords={siteMetadata.keywords} />
       <Bio />
+      <Search inputSearchWord={inputSearchWord} />
       <Category
         categories={categories}
         category={category}
@@ -58,6 +63,7 @@ export default ({ data, location }) => {
         countOfInitialPost={countOfInitialPost}
         count={count}
         category={category}
+        searchWord={searchWord}
       />
     </Layout>
   )
@@ -89,6 +95,7 @@ export const pageQuery = graphql`
             category
             draft
           }
+          html
         }
       }
     }

@@ -1,0 +1,122 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.md-form {
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.md-form .prefix {
+  position: absolute;
+  transition: color 0.2s;
+}
+
+// ACTIVE STATUS
+.md-form .prefix.active {
+  color: #4285f4;
+}
+.md-form .prefix {
+  top: 0.25rem;
+  font-size: 1.75rem;
+}
+.md-form input:not([type]),
+.md-form input[type='text']:not(.browser-default),
+.md-form input[type='password']:not(.browser-default),
+.md-form input[type='email']:not(.browser-default),
+.md-form input[type='url']:not(.browser-default),
+.md-form input[type='time']:not(.browser-default),
+.md-form input[type='date']:not(.browser-default),
+.md-form input[type='datetime']:not(.browser-default),
+.md-form input[type='datetime-local']:not(.browser-default),
+.md-form input[type='tel']:not(.browser-default),
+.md-form input[type='number']:not(.browser-default),
+.md-form input[type='search']:not(.browser-default),
+.md-form input[type='phone']:not(.browser-default),
+.md-form input[type='search-md'],
+.md-form textarea.md-textarea {
+  box-sizing: content-box;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.md-form .prefix ~ input,
+.md-form .prefix ~ textarea {
+  width: calc(100% - 2.5rem);
+  margin-left: 2.5rem;
+}
+.md-form .form-control {
+  box-sizing: border-box !important;
+}
+.md-form .form-control {
+  height: auto;
+  padding: 0.6rem 0 0.4rem 0;
+  margin: 0 0 0.5rem 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+.md-form .prefix ~ label {
+  margin-left: 2.5rem;
+}
+.md-form > label {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.md-form label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1rem;
+  color: #757575;
+  cursor: text;
+  transition: transform 0.2s ease-out, color 0.2s ease-out;
+  transform: translateY(12px);
+  transform-origin: 0% 100%;
+}
+.md-form input:not([type]):focus:not([readonly]) + label,
+.md-form input[type='text']:not(.browser-default):focus:not([readonly]) + label,
+.md-form
+  input[type='password']:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form
+  input[type='email']:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form input[type='url']:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type='time']:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type='date']:not(.browser-default):focus:not([readonly]) + label,
+.md-form
+  input[type='datetime']:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form
+  input[type='datetime-local']:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form input[type='tel']:not(.browser-default):focus:not([readonly]) + label,
+.md-form
+  input[type='number']:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form
+  input[type='search']:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form
+  input[type='phone']:not(.browser-default):focus:not([readonly])
+  + label,
+.md-form input[type='search-md']:focus:not([readonly]) + label,
+.md-form textarea.md-textarea:focus:not([readonly]) + label {
+  color: #4285f4;
+}
+.md-form label.active {
+  transform: translateY(-14px) scale(0.8);
+}
+.md-form label.active {
+  font-size: 1rem;
+}
+.md-form input[type='text']:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #4285f4;
+  box-shadow: 0 1px 0 0 #4285f4;
+}

@@ -1,16 +1,24 @@
 import React, { useMemo } from 'react'
+import { graphql } from 'gatsby'
 
 import { ThumbnailContainer } from '../thumbnail-container'
 import { ThumbnailItem } from '../thumbnail-item'
 import { CATEGORY_TYPE } from '../../constants'
 
-export const Contents = ({ posts, countOfInitialPost, count, category }) => {
+export const Contents = ({
+  posts,
+  countOfInitialPost,
+  count,
+  category,
+  searchWord,
+}) => {
   const refinedPosts = useMemo(() =>
     posts
-      .filter(
-        ({ node }) =>
-          category === CATEGORY_TYPE.ALL ||
-          node.frontmatter.category === category
+      .filter(({ node }) =>
+        searchWord.length == 0 || searchWord === undefined
+          ? category === CATEGORY_TYPE.ALL ||
+            node.frontmatter.category === category
+          : node.html.toString().match(new RegExp(searchWord, 'i')) != null
       )
       .slice(0, count * countOfInitialPost)
   )
