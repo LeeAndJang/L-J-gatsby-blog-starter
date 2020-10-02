@@ -39,6 +39,7 @@ export const Search = props => {
   return (
     <form onSubmit={onFormSubmit}>
       <Input
+        type="search"
         name="input"
         label="검색할 단어를 입력해보세요."
         icon="search"

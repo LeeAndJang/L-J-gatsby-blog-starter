@@ -8,11 +8,7 @@ export function useSearchWord() {
   const [searchWord, setSearchWord] = useState('')
   const inputSearchWord = useCallback(searchWord => {
     setSearchWord(searchWord)
-    window.history.pushState(
-      { searchWord },
-      '',
-      `${window.location.pathname}?${qs.stringify({ searchWord })}`
-    )
+    window.history.pushState({ searchWord }, '', `${window.location.pathname}`)
   }, [])
   const changeSearchWord = useCallback((withScroll = true) => {
     const { searchWord } = qs.parse(location.search)
