@@ -173,7 +173,7 @@ src/styles
 ### 🍭 Tips (You can change...)
 
 - Profile image! (replace file in `/content/assets/profile.png`)
-- Favicon image! (replace file in `/content/assets/felog.png`)
+- Favicon image! (replace file in `/content/assets/React.js_logo-512.png`)
 - Header gradient! (\$theme-gradient `/styles/variables.scss`)
 - Utterances repository! (replace repository address in `/gatsby-meta-config.js`)
   - ⚠️ Please check, this guide(https://utteranc.es/)
