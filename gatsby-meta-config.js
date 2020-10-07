@@ -3,7 +3,7 @@ module.exports = {
   description: `Blog posted about ...`,
   author: `이정우`,
   introduction: `자바 웹 개발의 진입장벽이 많이 낮아졌습니다. 아직도 웹개발을 고민하시나요? 한달이면 인문계인 당신도 웹개발자가 될 수 있습니다.`,
-  siteUrl: `https://ramsbaby.netlify.com`, // Your blog site url
+  siteUrl: `https://ramsbaby.netlify.app`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: ``, // Your GitHub account
