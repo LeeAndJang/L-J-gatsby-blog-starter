@@ -5,11 +5,18 @@ import { Header } from '../components/header'
 import { ThemeSwitch } from '../components/theme-switch'
 import { Footer } from '../components/footer'
 import { rhythm } from '../utils/typography'
+import BackToTop from './back-to-top'
 
 import './index.scss'
 
 export const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
+
+  const renderBackToTop = () => {
+    if (typeof window !== 'undefined') {
+      return <BackToTop />
+    }
+  }
 
   return (
     <React.Fragment>
@@ -25,6 +32,7 @@ export const Layout = ({ location, title, children }) => {
         <ThemeSwitch />
         <Header title={title} location={location} rootPath={rootPath} />
         {children}
+        {renderBackToTop()}
         <Footer />
       </div>
     </React.Fragment>
