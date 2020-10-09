@@ -9,3 +9,132 @@ body {
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.3s, color 0.3s;
 }
+.duration-500 {
+  transition-duration: 0.5s;
+}
+.transition-opacity {
+  transition-property: opacity;
+}
+.z-50 {
+  z-index: 50;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.right-0 {
+  right: 0;
+}
+.fixed {
+  position: fixed;
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.opacity-50 {
+  opacity: 0.5;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  border: 0 solid #e2e8f0;
+}
+.bg-gray-100 {
+  --bg-opacity: 1;
+  background-color: #f7fafc;
+  background-color: rgba(247, 250, 252, var(--bg-opacity));
+}
+.opacity-0 {
+  opacity: 0;
+}
+.fa,
+.fas {
+  font-weight: 900;
+}
+.fa,
+.far,
+.fas {
+  font-family: Font awesome\5 Free;
+}
+.fa,
+.fab,
+.fad,
+.fal,
+.far,
+.fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+.text-white {
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.bg-gray-500 {
+  --bg-opacity: 1;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: xx-large;
+  background-color: #ff0000;
+  animation: flutter 2s infinite linear;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+[role='button'],
+button {
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  background-image: none;
+}
+[type='button'],
+[type='reset'],
+[type='submit'],
+button {
+  -webkit-appearance: button;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+input {
+  overflow: visible;
+  width: 90px;
+  height: 50px;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
