@@ -88,11 +88,11 @@ body {
   border-radius: 0.5rem;
 }
 .bg-gray-500 {
-  --bg-opacity: 1;
+  --bg-opacity: 0.5;
   color: #ffffff;
   font-weight: 600;
   font-size: xx-large;
-  background-color: #ff0000;
+  background: linear-gradient(90deg, red, yellow);
   animation: flutter 2s infinite linear;
 }
 button,
