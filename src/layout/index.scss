@@ -92,7 +92,12 @@ body {
   color: #ffffff;
   font-weight: 600;
   font-size: xx-large;
-  background: linear-gradient(90deg, red, yellow);
+  background: rgb(255, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 22%,
+    rgba(254, 255, 0, 1) 100%
+  );
   animation: flutter 2s infinite linear;
 }
 button,
