@@ -44,7 +44,12 @@ export function Head({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
-          />
+          >
+            <meta
+              name="google-site-verification"
+              content="HZflfCKdZvjC8qWB5opaiDcDmA9vTHZa-_uamDrd-Sc"
+            />
+          </Helmet>
         )
       }}
     />
