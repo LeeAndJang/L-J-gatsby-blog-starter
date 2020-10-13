@@ -1,3 +1,5 @@
+import './index.scss'
+
 import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 
@@ -19,7 +21,6 @@ import kebabCase from 'lodash/kebabCase'
 
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'
-import './index.scss'
 
 export default ({ data, pageContext, location }) => {
   useEffect(() => {
@@ -47,7 +48,9 @@ export default ({ data, pageContext, location }) => {
               to={`${location.pathname}#${encodeURI(
                 kebabCase(header.value.replace(regex, ''))
               )}`}
-              className="post-single__table_of_contents-list-item-link"
+              // className="post-single__table_of_contents-list-item-link"
+              activeClassName={{ color: 'red' }}
+              partiallyActive={true}
             >
               {header.value}
             </Link>
