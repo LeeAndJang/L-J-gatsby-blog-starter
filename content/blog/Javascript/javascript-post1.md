@@ -6,7 +6,7 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-###es5 이하 버전
+c### ES5 이하 버전
 
 ```javascript
 function getUniqueObjectArray(array, key) {
@@ -25,7 +25,7 @@ function getUniqueObjectArray(array, key) {
 }
 ```
 
-###es6 버전
+### ES6 버전
 
 ```javascript
 function getUniqueObjectArray(array, key) {
@@ -39,10 +39,8 @@ function getUniqueObjectArray(array, key) {
 }
 ```
 
-
 <br>
 <br>
 <br>
 
 ####읽어주셔서 감사합니다.🖐
-

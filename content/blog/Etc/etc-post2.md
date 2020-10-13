@@ -6,7 +6,7 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-### Arctic Code Vault Contributor ??
+### Arctic Code Vault Contributor??
 
 [본인의 깃허브](https://github.com/ramsbaby) 에 가보면 프로필 밑에 어느날 Highlights 란이 생겨있네요?
 
@@ -32,7 +32,6 @@ draft: false
 <br><br>
 
 ![](/images/ramsbaby_github.png)
-
 
 <br>
 <br>
