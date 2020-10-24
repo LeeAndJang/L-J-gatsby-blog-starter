@@ -79,3 +79,4 @@ gatsby-meta-config.js
 src/pages/about.js
 src/constants/meta.js
 src/components/social-share/
+src/components/bio/
