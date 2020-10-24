@@ -73,6 +73,7 @@ yarn-error.log
 
 
 #our cumstom ignore
+content/__about/*
 content/blog/*
 !content/blog/development
 gatsby-meta-config.js
