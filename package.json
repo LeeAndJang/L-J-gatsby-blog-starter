@@ -8,7 +8,7 @@
     "url": "https://github.com/Ramsbaby/ramsbaby-blog-starter/issues"
   },
   "dependencies": {
-    "gatsby": "^2.2.8",
+    "gatsby": "^2.24.85",
     "gatsby-image": "^2.0.34",
     "gatsby-plugin-feed": "^2.1.0",
     "gatsby-plugin-google-analytics": "^2.0.17",
@@ -77,7 +77,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ramsbaby/ramsbaby-blog-starter.git"
+    "url": "git+https://github.com/Ramsbaby/blog-share.git"
   },
   "scripts": {
     "post": "gatsby-post-gen",
