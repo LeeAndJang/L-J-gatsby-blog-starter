@@ -93,14 +93,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        host: 'https://ramsbaby.netlify.app',
-        sitemap: 'https://ramsbaby.netlify.app/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }],
-      },
-    },
+    metaConfig.seo,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,

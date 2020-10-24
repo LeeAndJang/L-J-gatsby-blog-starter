@@ -24,4 +24,12 @@ module.exports = {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
   },
   ga: 'UA-179073418-1', // Add your google analytics tranking ID
+  seo : {
+    resolve: 'gatsby-plugin-robots-txt',
+    options: {
+      host: 'https://ramsbaby.netlify.app',
+      sitemap: 'https://ramsbaby.netlify.app/sitemap.xml',
+      policy: [{ userAgent: '*', allow: '/' }],
+    },
+  },
 }
