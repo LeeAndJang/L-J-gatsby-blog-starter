@@ -67,3 +67,14 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+
+
+
+
+#source 제외 ignore
+.content/
+.gatsby-meta-config.js
+.src/pages/about.js
+.src/constants/meta.js
+.src/components/social-share/
