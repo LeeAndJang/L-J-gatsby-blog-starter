@@ -5,7 +5,7 @@ import './index.scss'
 export const GitHubIcon = () => {
   return (
     <a
-      href="https://github.com/Ramsbaby"
+      href="https://github.com"
       className="github"
       aria-label="GitHub"
       target="_blank"
