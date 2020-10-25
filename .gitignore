@@ -75,6 +75,7 @@ yarn-error.log
 #our cumstom ignore
 content/blog/*
 !content/blog/development
+content/__about/*
 gatsby-meta-config.js
 src/pages/about.js
 src/constants/meta.js
