@@ -1,0 +1,27 @@
+@import '../styles/variables.scss';
+@import '../styles/light-theme.scss';
+@import '../styles/dark-theme.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+@include mobile {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@include tablet {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@include desktop {
+  .sidebar {
+    width: 15%;
+  }
+}
+
+.sidebar {
+  float: left;
+}
