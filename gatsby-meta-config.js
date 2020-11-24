@@ -27,8 +27,8 @@ module.exports = {
   seo : {
     resolve: 'gatsby-plugin-robots-txt',
     options: {
-      host: 'https://ramsbaby.netlify.app',
-      sitemap: 'https://ramsbaby.netlify.app/sitemap.xml',
+      host: 'https://dev-gogu.netlify.app',
+      sitemap: 'https://dev-gogu.netlify.app/sitemap.xml',
       policy: [{ userAgent: '*', allow: '/' }],
     },
   },
