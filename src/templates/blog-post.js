@@ -18,6 +18,7 @@ import { Utterances } from '../components/utterances'
 import * as ScrollManager from '../utils/scroll'
 import { Link } from 'gatsby'
 import kebabCase from 'lodash/kebabCase'
+import { rhythm } from '../utils/typography'
 
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'
@@ -61,6 +62,14 @@ export default ({ data, pageContext, location }) => {
 
   return (
     <Layout location={location} title={title}>
+      <div 
+          style={{
+            marginLeft: `auto`,
+            marginRight: `auto`,
+            maxWidth: rhythm(45),
+            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          }}
+        >
       <Head title={postTitle} description={post.excerpt} />
       <PostTitle title={postTitle} />
       <PostDate date={date} />
@@ -82,6 +91,8 @@ export default ({ data, pageContext, location }) => {
         />
       )}
       {!!utterances && <Utterances repo={utterances} />}
+
+      </div>
     </Layout>
   )
 }
