@@ -5,7 +5,7 @@ module.exports = {
   introduction: `L&J 블로그에 오신것을 환영합니다.`,
   siteUrl: `https://l-j-gatsby-blog-starter.netlify.app/`, // Your blog site url
   social: {
-    github: `LeeAndJang`, // Your GitHub account
+    github: `LeeAndJang/L-J-gatsby-blog-starter`, // Your GitHub account
     lblog: `https://ramsbaby.netlify.app/`,
     jblog: `https://gogujang.netlify.app/`,
   },
