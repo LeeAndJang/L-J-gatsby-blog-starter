@@ -77,8 +77,8 @@ content/__about/*
 # content/blog/*
 !content/blog/development
 content/__about/*
-gatsby-meta-config.js
+# gatsby-meta-config.js
 src/pages/about.js
 src/constants/meta.js
 src/components/social-share/
-src/components/bio/
+# src/components/bio/
