@@ -19,6 +19,7 @@
 - `React.js`와 `Gatsby.js`를 이용하여 누구나 손쉽게 블로그를 운영할 수 있습니다.
 - `Netlify`와 `Github`를 통한 무중단, 자동배포, 서버리스 웹서비스를 제공합니다.
 - 이 템플릿을 이용하면 리액트에 대한 지식이 없어도 `리액트 기반 블로그`를 체험할 수 있습니다.
+- 별도의 운영서버없이 `무료 호스팅 서비스`를 이용하여 나만의 블로그를 `직접` 제작할 수 있습니다.
 
 <br>
 
@@ -36,12 +37,12 @@
 
 <br>
 
-## Demo Site
+## 데모 사이트
 
 - [Click Here !](https://l-j-gatsby-blog-starter.netlify.com/)
 
 <details open>
-  <summary>Use case</summary>
+  <summary>Use case (블로그를 사용해주시는 고마운 분들)</summary>
   <p>
     <!-- <img src="./assets/demos.png" alt="demo-image"> -->
     <ul>
@@ -51,7 +52,7 @@
   </p>
 </details>
 
-> If you're using this template, Please Pull Request for `Use case`!
+> 이 블로그 템플릿을 사용하시는 경우, `Use case` 에 본인의 블로그를 추가해주시길 부탁드립니다!
 
 <br><br>
 
@@ -160,7 +161,7 @@ src/styles
 
 ## ☕ Like it?
 
-<a href="https://www.buymeacoffee.com/jbee" target="_blank">
+<a href="https://www.buymeacoffee.com/ramsbaby" target="_blank">
   <img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" >
 </a>
 
@@ -181,6 +182,14 @@ src/styles
 ## 🎁 Contributing
 
 [Contributing guide](./CONTRIBUTING.md)
+
+<br><br>
+
+## 👏 Creator
+
+[이정우](https://www.notion.so/Ramsbaby-13eb750380004cab9942867038d7e00f)
+<br>
+[장철우](https://github.com/jcwooo)
 
 <br><br>
 
