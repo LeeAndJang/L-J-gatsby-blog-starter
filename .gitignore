@@ -73,12 +73,11 @@ yarn-error.log
 
 
 #our cumstom ignore
-content/__about/*
+# content/__about/*
 # content/blog/*
-!content/blog/development
-content/__about/*
+# !content/blog/development
 # gatsby-meta-config.js
-src/pages/about.js
-src/constants/meta.js
-src/components/social-share/
+# src/pages/about.js
+# src/constants/meta.js
+# src/components/social-share/
 # src/components/bio/
