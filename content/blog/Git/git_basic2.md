@@ -1,19 +1,10 @@
 ---
-title: Git 명령어
+title: 테스트글입니다.
 date: 2020-10-21 22:10:36
 category: Git
 thumbnail: ''
 draft: false
-tags: ['git2', 'gatsby']
+tags: ['git2', 'gatsby', 'test']
 ---
 
-## GIT2
-
----
-
-git commit -m [설명] <br>
-인덱스(Staging Area)에 올린 변경사항을 Head에 적용한다.
-
-```
-$ git commit -m "html 변경"
-```
+이 블로그는 Gatsby.js와 React.js로 구성된 블로그입니다.

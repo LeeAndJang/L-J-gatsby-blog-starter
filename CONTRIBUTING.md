@@ -46,4 +46,3 @@ Consider starting the commit message with an applicable emoji:
 ### Thanks!
 
 > I'm waiting for your pull request. :pray:
-
