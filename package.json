@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "",
   "bugs": {
-    "url": "https://github.com/LeeAndJang/blog-share/issues"
+    "url": "https://github.com/LeeAndJang/L-J-gatsby-blog-starter/issues"
   },
   "dependencies": {
     "gatsby": "^2.24.85",
@@ -69,7 +69,7 @@
     "recursive-readdir": "^2.2.2",
     "signale": "^1.3.0"
   },
-  "homepage": "https://github.com/LeeAndJang/blog-share",
+  "homepage": "https://github.com/LeeAndJang/L-J-gatsby-blog-starter",
   "keywords": [
     "gatsby"
   ],
@@ -77,7 +77,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LeeAndJang/blog-share/issues.git"
+    "url": "git+https://github.com/LeeAndJang/L-J-gatsby-blog-starter/issues.git"
   },
   "scripts": {
     "post": "gatsby-post-gen",
