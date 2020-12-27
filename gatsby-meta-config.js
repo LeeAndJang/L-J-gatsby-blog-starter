@@ -11,7 +11,7 @@ module.exports = {
   keywords: [`blog`, `LeeAndJang`, `L&J`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: 'LeeAndJang/blog-share', // Your repository for archive comment
+    utterances: 'LeeAndJang/L-J-gatsby-blog-starter', // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
