@@ -5,7 +5,7 @@
 </div>
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/LeeAndJang/blog-share/issues)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4b1962ce-6206-4d8f-9516-63be92294198/deploy-status)](https://app.netlify.com/sites/ramsbaby/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4b1962ce-6206-4d8f-9516-63be92294198/deploy-status)](https://app.netlify.com/sites/LeeAndJang/deploys)
 
 <!-- [한국어🇰🇷](./README.ko.md) -->
 
