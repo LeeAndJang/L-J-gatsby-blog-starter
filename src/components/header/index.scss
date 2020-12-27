@@ -1,9 +1,46 @@
-.home-header {
-  margin-top: 0;
-  border-bottom: none;
-  font-weight: 900;
-  font-size: 48px;
-  letter-spacing: -2px;
+@import './_variables.scss';
+@import './_mixins.scss';
+
+@include mobile {
+  .home-header {
+    margin-top: 0;
+    border-bottom: none;
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: -2px;
+    // position: sticky;
+    // top: 100px;
+    background: white;
+    z-index: 9999999;
+  }
+}
+
+@include tablet {
+  .home-header {
+    margin-top: 0;
+    border-bottom: none;
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: -2px;
+    // position: ss
+    top: 0px;
+    background: white;
+    z-index: 9999999;
+  }
+}
+
+@include desktop {
+  .home-header {
+    margin-top: 0;
+    border-bottom: none;
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: -2px;
+    position: sticky;
+    top: 0px;
+    background: white;
+    z-index: 9999999;
+  }
 }
 
 .link {

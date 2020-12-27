@@ -1,18 +1,38 @@
 @import '../styles/variables.scss';
 @import '../styles/light-theme.scss';
 @import '../styles/dark-theme.scss';
-@import './variables.scss';
-@import './mixins.scss';
+@import './_variables.scss';
+@import './_mixins.scss';
 
 @include mobile {
   .sidebar {
     width: 100%;
+    background-color: white;
+  }
+
+  .sidebar-container {
+    position: sticky;
+    top: 0px;
+    z-index: 9999999;
+    height: 124px;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 }
 
 @include tablet {
   .sidebar {
     width: 100%;
+    background-color: white;
+  }
+
+  .sidebar-container {
+    position: sticky;
+    top: 0px;
+    z-index: 9999999;
+    height: 124px;
+    // overflow: hidden;
+    // overflow-y: scroll;
   }
 }
 
@@ -20,8 +40,49 @@
   .sidebar {
     width: 15%;
   }
+
+  .sidebar-container {
+    position: sticky;
+    top: 0;
+  }
 }
 
 .sidebar {
   float: left;
+}
+
+.sidebar-container {
+  position: sticky;
+  top: 0;
+}
+
+.site-wrapper {
+  padding: 3vw;
+  // min-height: 100vh;
+  position: sticky;
+  top: 0px;
+  // height: 3000px;
+
+  // background-repeat: repeat;
+}
+@media (max-width: 800px) {
+  .site-wrapper {
+    padding: 6vw;
+  }
+}
+
+.snow {
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+
+  width: 100%;
+  margin-left: -5%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .snow {
+    display: none;
+  }
 }
