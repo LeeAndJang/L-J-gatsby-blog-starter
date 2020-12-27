@@ -1,1 +1,1 @@
-export const HOME_TITLE = 'Ramsbaby tech blog'
+export const HOME_TITLE = 'L&J gatsby blog starter'
