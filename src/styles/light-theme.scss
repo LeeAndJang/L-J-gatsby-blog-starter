@@ -7,6 +7,12 @@ body.light {
     color: $dark-gray;
   }
 
+  .tag-contents {
+    color: $light-link-color;
+    background-color: $light-background-color;
+    text-shadow: $light-text-shadow;
+  }
+
   .bio {
     .author-name-content {
       background-color: $light-category-border-color;

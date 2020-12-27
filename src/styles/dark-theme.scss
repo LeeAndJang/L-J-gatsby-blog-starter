@@ -4,8 +4,13 @@ body.dark {
   color: $dark-light-font-color;
 
   // home
-  .home-header {
+  .home-header,
+  .md-form,
+  .ScrollMenu-container,
+  .sidebar-container,
+  .tag-contents {
     color: $dark-light-font-color;
+    background-color: $dark-background-color;
   }
 
   .bio {
