@@ -6,6 +6,8 @@ module.exports = {
   siteUrl: `https://l-j-gatsby-blog-starter.netlify.app/`, // Your blog site url
   social: {
     github: `LeeAndJang`, // Your GitHub account
+    lblog: `https://ramsbaby.netlify.app/`,
+    jblog: `https://gogujang.netlify.app/`,
   },
   icon: `content/assets/React.js_logo-512.png`, // Add your favicon
   keywords: [`blog`, `LeeAndJang`, `L&J`],
