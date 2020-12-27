@@ -1,9 +1,11 @@
 @import '../../styles/variables.scss';
+@import './_variables.scss';
+@import './_mixins.scss';
 
 .category-container {
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 0px;
   line-height: 0;
   white-space: nowrap;
   overflow-x: scroll;
@@ -63,4 +65,31 @@
 .scroll-menu-arrow {
   padding: 20px;
   cursor: pointer;
+}
+
+@include mobile {
+  .ScrollMenu-container {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 164px;
+    background: white;
+  }
+}
+
+@include tablet {
+  .ScrollMenu-container {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 164px;
+    background: white;
+  }
+}
+
+@include desktop {
+  .ScrollMenu-container {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+    background: white;
+  }
 }

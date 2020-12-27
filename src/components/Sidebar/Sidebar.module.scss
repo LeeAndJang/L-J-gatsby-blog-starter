@@ -3,6 +3,8 @@
 
 .sidebar {
   width: 100%;
+  position: sticky;
+
   &__inner {
     position: relative;
     padding: 25px 20px 0;

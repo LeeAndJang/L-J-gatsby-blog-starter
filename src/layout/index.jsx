@@ -8,6 +8,7 @@ import { rhythm } from '../utils/typography'
 import BackToTop from './back-to-top'
 import Sidebar from '../components/Sidebar'
 
+import './index.scss'
 
 export const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -22,24 +23,23 @@ export const Layout = ({ location, title, children }) => {
     <React.Fragment>
       <Top title={title} location={location} rootPath={rootPath} />
       {/* <div> */}
-        {/* <div className={'sidebar'} >
+      {/* <div className={'sidebar'} >
           <Sidebar />
         </div> */}
-        <div
-          // style={{
-          //   marginLeft: `auto`,
-          //   marginRight: `auto`,
-          //   maxWidth: rhythm(75),
-          //   padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          // }}
-        >
-          
-          <ThemeSwitch />
-          {/* <Header title={title} location={location} rootPath={rootPath} /> */}
-          {children}
-          {renderBackToTop()}
-          <Footer />
-        </div>
+      <div
+      // style={{
+      //   marginLeft: `auto`,
+      //   marginRight: `auto`,
+      //   maxWidth: rhythm(75),
+      //   padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+      // }}
+      >
+        <ThemeSwitch />
+        {/* <Header title={title} location={location} rootPath={rootPath} /> */}
+        {children}
+        {renderBackToTop()}
+        <Footer />
+      </div>
       {/* </div> */}
     </React.Fragment>
   )
