@@ -11,27 +11,38 @@ export const Contents = ({
   category,
   searchWord,
   clickTag,
-  exposureGb
+  exposureGb,
 }) => {
-  const refinedPosts = useMemo(() => 
-      posts.filter(({ node }) => {
-        switch(exposureGb){
-          case 'SEARCH' : 
-            return node.html.toString().match(new RegExp(searchWord, 'i')) != null 
-          case 'CATE' :
-            return category === CATEGORY_TYPE.ALL || node.frontmatter.category === category
-          case 'TAG' :
+  const refinedPosts = useMemo(() =>
+    posts
+      .filter(({ node }) => {
+        switch (exposureGb) {
+          case 'SEARCH':
+            return (
+              node.html.toString().match(new RegExp(searchWord, 'i')) != null
+            )
+          case 'CATE':
+            return (
+              category === CATEGORY_TYPE.ALL ||
+              node.frontmatter.category === category
+            )
+          case 'TAG':
             return node.frontmatter.tags.includes(clickTag)
-          default :
+          default:
             return category === CATEGORY_TYPE.ALL
-
-        } 
-      }).slice(0, count * countOfInitialPost)
+        }
+      })
+      .slice(0, count * countOfInitialPost),
   )
+
   return (
     <ThumbnailContainer>
       {refinedPosts.map(({ node }, index) => (
-        <ThumbnailItem node={node} key={`item_${index}`} />
+        <ThumbnailItem
+          node={node}
+          key={`item_${index}`}
+          imagePath={node.frontmatter.thumbnail}
+        />
       ))}
     </ThumbnailContainer>
   )

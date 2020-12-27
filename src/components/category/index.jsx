@@ -7,13 +7,16 @@ import ScrollMenu from 'react-horizontal-scrolling-menu'
 // One item component
 // selected prop will be passed
 const MenuItem = ({ text, selected, selectExposureGb }) => {
-  return <div className={`menu-item ${selected ? 'active' : ''}`}
-              onClick={function(){
-                selectExposureGb('CATE')
-              }}
-          >
-            {text}
-          </div>
+  return (
+    <div
+      className={`menu-item ${selected ? 'active' : ''}`}
+      onClick={function() {
+        selectExposureGb('CATE')
+      }}
+    >
+      {text}
+    </div>
+  )
 }
 
 // All items component
@@ -22,7 +25,14 @@ export const Menu = (list, selected, selectExposureGb) =>
   list.map(el => {
     const { name } = el
 
-    return <MenuItem text={name} key={name} selected={selected} selectExposureGb={selectExposureGb}/>
+    return (
+      <MenuItem
+        text={name}
+        key={name}
+        selected={selected}
+        selectExposureGb={selectExposureGb}
+      />
+    )
   })
 
 const Arrow = ({ text, className }) => {
@@ -34,7 +44,12 @@ const ArrowRight = Arrow({ text: '👉', className: 'arrow-next' })
 
 const selected = 'All'
 
-export const Category = ({ categories, category, selectCategory, selectExposureGb }) => {
+export const Category = ({
+  categories,
+  category,
+  selectCategory,
+  selectExposureGb,
+}) => {
   const containerRef = useRef(null)
 
   const scrollToCenter = useCallback(
@@ -53,7 +68,7 @@ export const Category = ({ categories, category, selectCategory, selectExposureG
         behavior: 'smooth',
       })
     },
-    [containerRef]
+    [containerRef],
   )
 
   let list = categories.map((title, idx) => ({ name: title, key: idx }))
@@ -62,12 +77,14 @@ export const Category = ({ categories, category, selectCategory, selectExposureG
   const menu = Menu(list, selected, selectExposureGb)
 
   return (
-    <ScrollMenu
-      data={menu}
-      arrowLeft={ArrowLeft}
-      arrowRight={ArrowRight}
-      selected={selected}
-      onSelect={selectCategory}
-    />
+    <div className={'ScrollMenu-container'}>
+      <ScrollMenu
+        data={menu}
+        arrowLeft={ArrowLeft}
+        arrowRight={ArrowRight}
+        selected={selected}
+        onSelect={selectCategory}
+      />
+    </div>
   )
 }
