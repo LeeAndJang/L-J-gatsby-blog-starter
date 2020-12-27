@@ -22,7 +22,7 @@ module.exports = {
   share: {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
   },
-  ga: 'UA-179073418-1', // Add your google analytics tranking ID
+  ga: '', // Add your google analytics tranking ID
   seo: {
     resolve: 'gatsby-plugin-robots-txt',
     options: {
