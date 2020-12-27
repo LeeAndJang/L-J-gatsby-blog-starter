@@ -2,7 +2,7 @@
 title: 테스트글입니다.
 date: 2020-10-21 22:10:36
 category: Git
-thumbnail: ''
+thumbnail: 'welcome/test.jpg'
 draft: false
 tags: ['git2', 'gatsby', 'test']
 ---
