@@ -22,6 +22,7 @@ exports.createPages = ({ graphql, actions }) => {
                 title
                 category
                 draft
+                tags
               }
             }
           }

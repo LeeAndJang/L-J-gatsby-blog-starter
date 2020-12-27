@@ -6,17 +6,23 @@ import ScrollMenu from 'react-horizontal-scrolling-menu'
 
 // One item component
 // selected prop will be passed
-const MenuItem = ({ text, selected }) => {
-  return <div className={`menu-item ${selected ? 'active' : ''}`}>{text}</div>
+const MenuItem = ({ text, selected, selectExposureGb }) => {
+  return <div className={`menu-item ${selected ? 'active' : ''}`}
+              onClick={function(){
+                selectExposureGb('CATE')
+              }}
+          >
+            {text}
+          </div>
 }
 
 // All items component
 // Important! add unique key
-export const Menu = (list, selected) =>
+export const Menu = (list, selected, selectExposureGb) =>
   list.map(el => {
     const { name } = el
 
-    return <MenuItem text={name} key={name} selected={selected} />
+    return <MenuItem text={name} key={name} selected={selected} selectExposureGb={selectExposureGb}/>
   })
 
 const Arrow = ({ text, className }) => {
@@ -28,7 +34,7 @@ const ArrowRight = Arrow({ text: '👉', className: 'arrow-next' })
 
 const selected = 'All'
 
-export const Category = ({ categories, category, selectCategory }) => {
+export const Category = ({ categories, category, selectCategory, selectExposureGb }) => {
   const containerRef = useRef(null)
 
   const scrollToCenter = useCallback(
@@ -51,37 +57,11 @@ export const Category = ({ categories, category, selectCategory }) => {
   )
 
   let list = categories.map((title, idx) => ({ name: title, key: idx }))
-  list.unshift({ name: 'All' })
+  list.unshift({ name: 'All' }) // 앞에 새로운 배열값 추가 (list.push는 뒤에 배열을 추가함)
 
-  const menu = Menu(list, selected)
+  const menu = Menu(list, selected, selectExposureGb)
 
   return (
-    // <ul
-    //   ref={containerRef}
-    //   className="category-container"
-    //   role="tablist"
-    //   id="category"
-    //   style={{
-    //     margin: `0 -${rhythm(3 / 4)}`,
-    //     overflowX: 'scroll',
-    //   }}
-    // >
-    //   <Item
-    //     title={'All'}
-    //     selectedCategory={category}
-    //     onClick={selectCategory}
-    //     scrollToCenter={scrollToCenter}
-    //   />
-    //   {categories.map((title, idx) => (
-    //     <Item
-    //       key={idx}
-    //       title={title}
-    //       selectedCategory={category}
-    //       onClick={selectCategory}
-    //       scrollToCenter={scrollToCenter}
-    //     />
-    //   ))}
-    // </ul>
     <ScrollMenu
       data={menu}
       arrowLeft={ArrowLeft}
