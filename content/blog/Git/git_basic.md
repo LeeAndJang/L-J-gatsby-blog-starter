@@ -2,7 +2,7 @@
 title: Git 명령어
 date: 2020-10-21 22:10:36
 category: Git
-thumbnail: { thumbnailSrc }
+thumbnail: ''
 draft: false
 tags: ['git', 'gatsby']
 ---
