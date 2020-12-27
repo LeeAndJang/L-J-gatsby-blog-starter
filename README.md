@@ -1,17 +1,28 @@
+<!-- [한국어🇰🇷](./README.ko.md) -->
+
 <div align="center">
 
-  <img src="./assets/gatsby-starter-bee.png" width="360px" />
+  <img src="./static/welcome/blog-main.gif" width="45%" />
+  <img src="./static/welcome/blog-contents.gif" width="45%" />
 
 </div>
+
+<br><br>
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/LeeAndJang/blog-share/issues)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4b1962ce-6206-4d8f-9516-63be92294198/deploy-status)](https://app.netlify.com/sites/LeeAndJang/deploys)
 
-<!-- [한국어🇰🇷](./README.ko.md) -->
+<br><br>
 
-![screenshot](./assets/screenshot.png)
+## LeeAndJang Gatsby blog starter 는...
 
-In this template...
+- `React.js`와 `Gatsby.js`를 이용하여 누구나 손쉽게 블로그를 운영할 수 있습니다.
+- `Netlify`와 `Github`를 통한 무중단, 자동배포, 서버리스 웹서비스를 제공합니다.
+- 이 템플릿을 이용하면 리액트에 대한 지식이 없어도 `리액트 기반 블로그`를 체험할 수 있습니다.
+
+<br>
+
+## LeeAndJang Gatsby blog starter 에서 제공하는 서비스는...
 
 - 💄 Code highlight with Fira Code font
 - 🧙 CLI Tool
@@ -19,68 +30,45 @@ In this template...
 - 🗣 Social share feature (Twitter, Facebook)
 - 💬 Comment feature (disqus, utterances)
 - ☕ 'Buy me a coffee' service
-- 🤖 GA
+- 🤖 GA(Google Analytics)
 - ⭐ Enhance UX
 - ⚙ Configurable
 
-> [About this Template](https://www.gatsbyjs.org/starters/JaeYeopHan/gatsby-starter-bee/)
+<br>
 
-## Demo
+## Demo Site
 
-- [Default Theme](https://gatsby-starter-bee.netlify.com/)
+- [Click Here !](https://l-j-gatsby-blog-starter.netlify.com/)
 
-<details>
+<details open>
   <summary>Use case</summary>
   <p>
-    <img src="./assets/demos.png" alt="demo-image">
+    <!-- <img src="./assets/demos.png" alt="demo-image"> -->
     <ul>
-      <li>JBEE.io: https://jbee.io</li>
-      <li>Rinae's devlog: https://rinae.dev/</li>
-      <li>Seungdols Company: https://seungdols.dev/</li>
-      <li>Kooku's log: https://kooku.netlify.com/</li>
-      <li>SOSOLOG: https://so-so.dev/</li>
-      <li>delivan.dev: https://delivan.dev/</li>
-      <li>Jungin's blog: https://jungin.netlify.com/</li>
-      <li>Zero's blog: https://awesomezero.com/</li>
-      <li>Jonathan's blog: https://www.learningsomethingnew.com/</li>
-      <li>@deveely-log: https://deveely-log.netlify.com/</li>
-      <li>Hanul's blog: https://hanul-dev.netlify.com/</li>
-      <li>Hoons Blog: https://hoons-up.netlify.com/</li>
-      <li>JWN.cool: https://jwn.cool</li>
-      <li>ugaemi's dev note: https://ugaemi.github.io</li>
-      <li>Minsu's Dev Log: https://alstn2468.github.io/</li>
-      <li>Yungi's Dev Blog: https://yungis.dev/</li>
-      <li>< Taenylog />: https://taeny.dev/</li>
-      <li>brouk's devlog: https://brouk-devlog.netlify.com/</li>
-      <li>CoodingPenguin's Repository: https://cooding-penguin.netlify.com/</li>
-      <li>Garima's Tech Blog: https://garimasingh.netlify.app/ </li>
-      <li>DevRappers.dev: https://devrappers.dev/</li>
-      <li>Let's doodle: https://duduling-blog.netlify.app/</li>
-      <li>noopy.dev: https://noopy.dev/</li>
-      <li>Hong_Devlog: https://hong-dev.github.io/</li>
-      <li>samsara-ku's devlog: https://samsara-ku.dev/</li>
-      <li>sundo.kim: https://sundo.kim/</li>
-      <li>knou blog: https://bangtong.in/</li>
+      <li>L's tech blog: https://ramsbaby.netlify.com/</li>
+      <li>J's tech blog: https://gogujang.netlify.com/</li>
     </ul>
   </p>
 </details>
 
 > If you're using this template, Please Pull Request for `Use case`!
 
-## 😎 Quick Start
+<br><br>
 
-### 1. Create a Gatsby site
+## 🤟 Quick Start
+
+### 1. Clone a project
 
 ```sh
 # create a new Gatsby site using the blog starter
-npx gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-bee
+npx gatsby new my-blog-starter https://github.com/LeeAndJang/L-J-gatsby-blog-starter
 ```
 
-> If you are not using `npx`, following [Gatsby Getting Started](https://www.gatsbyjs.org/docs/quick-start)
+> If you are not using `npx`, following [Gatsby Getting Started](https://github.com/LeeAndJang/L-J-gatsby-blog-starter)
 
 ```sh
 npm install -g gatsby-cli
-gatsby new my-blog-starter https://github.com/JaeYeopHan/gatsby-starter-bee
+gatsby new my-blog-starter https://github.com/LeeAndJang/L-J-gatsby-blog-starter
 ```
 
 ### 2. Start developing
@@ -100,31 +88,23 @@ You can write...
 
 > With markdown syntax and some meta data
 
-#### Support script for creating new post
-
-![cli-tool-example](assets/cli-tool-example.gif)
-
-```sh
-npm run post
-```
-
-👉 Use **gatsby-post-gen** (https://github.com/JaeYeopHan/gatsby-post-gen)
-
 ### 4. Fix meta data
 
 You can fix meta data of blog in `/gatsby-meta-config.js` file.
 
 ### 5. Publish with [netlify](https://netlify.com)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/JaeYeopHab/gatsby-starter-bee)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LeeAndJang/L-J-gatsby-blog-starter)
 
-:bulb: if you want to deploy github pages, add following script to package.json
+> if you want to deploy github pages, add following script to package.json
 
 ```json
 "scripts": {
     "deploy": "gatsby build && gh-pages -d public -b master -r 'git@github.com:${your github id}/${github page name}.github.io.git'"
 }
 ```
+
+<br><br>
 
 ## 🧐 Customize
 
@@ -170,10 +150,13 @@ src/styles
 ### 🍭 Tips (You can change...)
 
 - Profile image! (replace file in `/content/assets/profile.png`)
+- Create thumbnail image (add file to `/static`)
 - Favicon image! (replace file in `/content/assets/React.js_logo-512.png`)
 - Header gradient! (\$theme-gradient `/styles/variables.scss`)
 - Utterances repository! (replace repository address in `/gatsby-meta-config.js`)
   - ⚠️ Please check, this guide(https://utteranc.es/)
+
+<br><br>
 
 ## ☕ Like it?
 
@@ -181,50 +164,25 @@ src/styles
   <img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" >
 </a>
 
-## 🤔 If...
+<br><br>
 
-If you are currently writing in the Medium, consider migration with [medium-to-own-blog](https://github.com/mathieudutour/medium-to-own-blog)!
+## 🙏 Source of Our blog...
+
+[한재엽님의 블로그](https://github.com/JaeYeopHan/gatsby-starter-bee/)!
+
+<br><br>
 
 ## :bug: Bug reporting
 
-[Issue](https://github.com/JaeYeopHan/gatsby-starter-bee/issues)
+[Issue](https://github.com/LeeAndJang/L-J-gatsby-blog-starter/issues)
+
+<br><br>
 
 ## 🎁 Contributing
 
 [Contributing guide](./CONTRIBUTING.md)
 
-## Contributors
-
-### Code Contributors
-
-This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
-
-<a href="https://github.com/JaeYeopHan/gatsby-starter-bee/graphs/contributors">
-<img src="https://opencollective.com/gatsby-starter-bee/contributors.svg?width=890&button=false" />
-</a>
-
-### Financial Contributors
-
-Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/gatsby-starter-bee/contribute)]
-
-#### Individuals
-
-<a href="https://opencollective.com/gatsby-starter-bee"><img src="https://opencollective.com/gatsby-starter-bee/individuals.svg?width=890"></a>
-
-#### Organizations
-
-Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/gatsby-starter-bee/contribute)]
-
-<a href="https://opencollective.com/gatsby-starter-bee/organization/0/website"><img src="https://opencollective.com/gatsby-starter-bee/organization/0/avatar.svg"></a>
-<a href="https://opencollective.com/gatsby-starter-bee/organization/1/website"><img src="https://opencollective.com/gatsby-starter-bee/organization/1/avatar.svg"></a>
-<a href="https://opencollective.com/gatsby-starter-bee/organization/2/website"><img src="https://opencollective.com/gatsby-starter-bee/organization/2/avatar.svg"></a>
-<a href="https://opencollective.com/gatsby-starter-bee/organization/3/website"><img src="https://opencollective.com/gatsby-starter-bee/organization/3/avatar.svg"></a>
-<a href="https://opencollective.com/gatsby-starter-bee/organization/4/website"><img src="https://opencollective.com/gatsby-starter-bee/organization/4/avatar.svg"></a>
-<a href="https://opencollective.com/gatsby-starter-bee/organization/5/website"><img src="https://opencollective.com/gatsby-starter-bee/organization/5/avatar.svg"></a>
-<a href="https://opencollective.com/gatsby-starter-bee/organization/6/website"><img src="https://opencollective.com/gatsby-starter-bee/organization/6/avatar.svg"></a>
-<a href="https://opencollective.com/gatsby-starter-bee/organization/7/website"><img src="https://opencollective.com/gatsby-starter-bee/organization/7/avatar.svg"></a>
-<a href="https://opencollective.com/gatsby-starter-bee/organization/8/website"><img src="https://opencollective.com/gatsby-starter-bee/organization/8/avatar.svg"></a>
-<a href="https://opencollective.com/gatsby-starter-bee/organization/9/website"><img src="https://opencollective.com/gatsby-starter-bee/organization/9/avatar.svg"></a>
+<br><br>
 
 ## LICENSE
 
@@ -232,6 +190,6 @@ Support this project with your organization. Your logo will show up here with a 
 
 <div align="center">
 
-<sub><sup>Project by <a href="https://github.com/JaeYeopHan">@Jbee</a></sup></sub><small>✌</small>
+<sub><sup>Project by <a href="https://github.com/LeeAndJang/L-J-gatsby-blog-starter/">@LeeAndJang</a></sup></sub><small>✌</small>
 
 </div>
