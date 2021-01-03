@@ -47,7 +47,7 @@
     <!-- <img src="./assets/demos.png" alt="demo-image"> -->
     <ul>
       <li>L's tech blog: https://ramsbaby.netlify.com/</li>
-      <li>J's tech blog: https://gogujang.netlify.com/</li>
+      <li>J's tech blog: https://goguj.netlify.com/</li>
       <li>김선휘님의 blog: https://bisunny.netlify.com/</li>
     </
     </ul>
