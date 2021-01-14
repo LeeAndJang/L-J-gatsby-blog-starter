@@ -2,7 +2,7 @@
 title: 블로그 배포 방법
 date: 2021-01-14 00:10:36
 category: manual
-thumbnail: 'welcome/welcome.jpg'
+thumbnail: 'blog_manual/netlify_github.png'
 draft: false
 tags: ['netlify', 'github']
 ---
