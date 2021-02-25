@@ -10,11 +10,12 @@
   opacity: 0;
 
   p {
-    font-size: 90%;
-    line-height: 1.4;
+    font-size: 110%;
+    line-height: 1.8;
   }
 }
 
 .thumbnail.visible {
   opacity: 1;
+  text-decoration: none;
 }

@@ -239,6 +239,9 @@
         }
       }
     }
+    &__table_of_contents {
+      font-size: 0.75rem;
+    }
     &__body {
       font-size: $typographic-base-font-size * 1.125;
       @include line-height(1.125);
