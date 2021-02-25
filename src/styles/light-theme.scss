@@ -7,6 +7,11 @@ body.light {
     color: $dark-gray;
   }
 
+  .top {
+    color: $dark-gray;
+    background-color: $light-background-color;
+  }
+
   .tag-contents {
     color: $light-link-color;
     background-color: $light-background-color;
