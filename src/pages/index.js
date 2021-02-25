@@ -39,7 +39,7 @@ export default ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
   const categories = useMemo(
     () => _.uniq(posts.map(({ node }) => node.frontmatter.category)),
-    [],
+    []
   )
   const tags = data.tagsGroup.group
 
@@ -212,7 +212,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400, truncate: true)
+          excerpt(pruneLength: 240, truncate: true)
           fields {
             slug
           }
