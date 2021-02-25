@@ -7,6 +7,7 @@
 @include mobile {
   .sidebar {
     width: 100%;
+    top: 20px;
     background-color: white;
   }
 
@@ -53,7 +54,7 @@
 
 .sidebar-container {
   position: sticky;
-  top: 0;
+  top: 10px;
 }
 
 .site-wrapper {
