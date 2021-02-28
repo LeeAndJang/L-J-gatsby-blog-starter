@@ -61,7 +61,7 @@ export default ({ data, pageContext, location }) => {
   )
 
   return (
-    <Layout location={location} title={title}>
+    <Layout location={location} title={title} data={data}>
       <div
         style={{
           marginLeft: `auto`,
@@ -103,6 +103,9 @@ export const pageQuery = graphql`
         title
         author
         siteUrl
+        social{
+          github
+        }
         comment {
           disqusShortName
           utterances

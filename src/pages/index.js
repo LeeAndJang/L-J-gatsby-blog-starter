@@ -24,6 +24,7 @@ import Particles from '../components/react-particles-js'
 
 import * as Dom from '../utils/dom'
 import * as EventManager from '../utils/event-manager'
+import { Link } from 'gatsby'
 
 const rootPath = `${__PATH_PREFIX__}/`
 
@@ -80,7 +81,7 @@ export default ({ data, location }) => {
   // },
 
   return (
-    <Layout location={location} title={siteMetadata.title}>
+    <Layout location={location} title={siteMetadata.title} data={data}>
       <div className="site-wrapper">
         <Particles
           className="snow"
@@ -156,6 +157,20 @@ export default ({ data, location }) => {
               </Sidebar>
             </div>
           </div>
+          <div className={'sidebar-container recently'}>
+            <div className={'sidebar right'}>
+              <Sidebar>
+                <p>Recently List</p>
+                {data.allMarkdownRemark.edges.map(({ node }) => (
+                  <li style={{ display: 'inline-block', width: '100%' }}>
+                    <Link to={node.fields.slug}>
+                      {'·\t' + node.frontmatter.title}
+                    </Link>
+                  </li>
+                ))}
+              </Sidebar>
+            </div>
+          </div>
           <div
             style={{
               marginLeft: `auto`,
@@ -201,6 +216,9 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        social {
+          github
+        }
         configs {
           countOfInitialPost
         }
