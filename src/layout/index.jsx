@@ -10,7 +10,7 @@ import Sidebar from '../components/Sidebar'
 
 import './index.scss'
 
-export const Layout = ({ location, title, children }) => {
+export const Layout = ({ data, location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
 
   const renderBackToTop = () => {
@@ -38,7 +38,7 @@ export const Layout = ({ location, title, children }) => {
         {/* <Header title={title} location={location} rootPath={rootPath} /> */}
         {children}
         {renderBackToTop()}
-        <Footer />
+        <Footer data={data} />
       </div>
       {/* </div> */}
     </React.Fragment>

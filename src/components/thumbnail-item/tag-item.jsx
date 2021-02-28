@@ -6,12 +6,15 @@ export const TagItem = ({ tags }) => {
     marginRight: '1rem',
   }
 
-  console.log(tags)
+  const h6Style = {
+    color: '#007bff',
+  }
+
   return (
     <div>
       {tags.map((val, idx) => (
         <div style={tagStyle}>
-          <h4>{'#' + val}</h4>
+          <h6 style={h6Style}>{'#' + val}</h6>
         </div>
       ))}
     </div>

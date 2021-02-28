@@ -15,6 +15,7 @@
   .sidebar {
     lost-column: 5/12;
     &__inner {
+      top: 15px;
       padding: 30px 20px 0;
       &:after {
         background: $color-gray-border;
@@ -26,7 +27,7 @@
         );
         position: absolute;
         content: '';
-        width: 1px;
+        width: 0px;
         height: 540px;
         top: 30px;
         right: -10px;

@@ -24,16 +24,22 @@
 @include tablet {
   .sidebar {
     width: 100%;
-    background-color: white;
   }
 
   .sidebar-container {
     position: sticky;
     top: 0px;
     z-index: 9999999;
-    height: 124px;
+    height: 162px;
+    min-height: 162px;
+    background-color: white;
+
     // overflow: hidden;
     // overflow-y: scroll;
+  }
+
+  .recently {
+    display: none;
   }
 }
 
@@ -50,6 +56,14 @@
 
 .sidebar {
   float: left;
+}
+
+.right {
+  float: right !important;
+
+  a {
+    color: #000080;
+  }
 }
 
 .sidebar-container {
