@@ -10,8 +10,12 @@ import Sidebar from '../components/Sidebar'
 
 import './index.scss'
 
-export const Layout = ({ data, location, title, children }) => {
+export const Layout = ({ siteMetadata, location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
+
+  console.log(siteMetadata)
+
+  const github_Id = siteMetadata.social.github
 
   const renderBackToTop = () => {
     if (typeof window !== 'undefined') {
@@ -21,7 +25,12 @@ export const Layout = ({ data, location, title, children }) => {
 
   return (
     <React.Fragment>
-      <Top title={title} location={location} rootPath={rootPath} data={data} />
+      <Top
+        title={title}
+        location={location}
+        rootPath={rootPath}
+        github_Id={github_Id}
+      />
       {/* <div> */}
       {/* <div className={'sidebar'} >
           <Sidebar />
@@ -38,7 +47,7 @@ export const Layout = ({ data, location, title, children }) => {
         {/* <Header title={title} location={location} rootPath={rootPath} /> */}
         {children}
         {renderBackToTop()}
-        <Footer data={data} />
+        <Footer siteMetadata={siteMetadata} />
       </div>
       {/* </div> */}
     </React.Fragment>
