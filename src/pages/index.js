@@ -5,7 +5,6 @@ import { Bio } from '../components/bio'
 import { Category } from '../components/category'
 import { Contents } from '../components/contents'
 import { Head } from '../components/head'
-import { HOME_TITLE } from '../constants'
 import { useCategory } from '../hooks/useCategory'
 import { useSearchWord } from '../hooks/useSearchWord'
 import { useTag } from '../hooks/useTag'
@@ -40,7 +39,7 @@ export default ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
   const categories = useMemo(
     () => _.uniq(posts.map(({ node }) => node.frontmatter.category)),
-    []
+    [],
   )
   const tags = data.tagsGroup.group
 
@@ -80,8 +79,10 @@ export default ({ data, location }) => {
   //   },
   // },
 
+  console.log(data.allMarkdownRemark)
+
   return (
-    <Layout location={location} title={siteMetadata.title} data={data}>
+    <Layout location={location} title={siteMetadata.title} siteMetadata={siteMetadata}>
       <div className="site-wrapper">
         <Particles
           className="snow"
@@ -161,8 +162,11 @@ export default ({ data, location }) => {
             <div className={'sidebar right'}>
               <Sidebar>
                 <p>Recently List</p>
-                {data.allMarkdownRemark.edges.map(({ node }) => (
-                  <li style={{ display: 'inline-block', width: '100%' }}>
+                {data.allMarkdownRemark.edges.slice(0, 5).map(({ node }) => (
+                  <li
+                    key={`recentlyList_` + node.frontmatter.title}
+                    style={{ display: 'inline-block', width: '100%' }}
+                  >
                     <Link to={node.fields.slug}>
                       {'·\t' + node.frontmatter.title}
                     </Link>
@@ -184,7 +188,10 @@ export default ({ data, location }) => {
               location={location}
               rootPath={rootPath}
             />
-            <Head title={HOME_TITLE} keywords={siteMetadata.keywords} />
+            <Head
+              title={siteMetadata.hometitle}
+              keywords={siteMetadata.keywords}
+            />
             <Bio />
             <Search
               inputSearchWord={inputSearchWord}
@@ -215,6 +222,7 @@ export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
+        hometitle
         title
         social {
           github

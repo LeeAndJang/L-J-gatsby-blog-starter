@@ -8,7 +8,7 @@ export const Bio = () => (
   <StaticQuery
     query={bioQuery}
     render={data => {
-      const { author, social, introduction } = data.site.siteMetadata
+      const { author, social, introduction, othersite } = data.site.siteMetadata
 
       return (
         <div className="bio">
@@ -24,16 +24,14 @@ export const Bio = () => (
               />
               <div className="author-name">
                 <span className="author-name-prefix">Written by</span>
-                <Link to={'/about'} className="author-name-content">
-                  <span>Lee And Jang</span>
+                <Link to={social.Portfolio} className="author-name-content">
+                  <span>{author}</span>
                 </Link>
                 <div className="author-introduction">{introduction}</div>
                 <p className="author-socials">
-                  {social.github && (
-                    <a href={`https://github.com/${social.github}`}>GitHub</a>
-                  )}
-                  {social.lblog && <a href={`${social.lblog}`}>L's Blog</a>}
-                  {social.github && <a href={`${social.jblog}`}>J's Blog</a>}
+                  {othersite.map((val, idx) => (
+                    <a href={val.url}>{`#` + val.name}</a>
+                  ))}
                 </p>
               </div>
             </div>
@@ -46,7 +44,7 @@ export const Bio = () => (
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/leeandjang.png/" }) {
+    avatar: file(absolutePath: { regex: "/profile.png/" }) {
       childImageSharp {
         fixed(width: 72, height: 72) {
           ...GatsbyImageSharpFixed
@@ -59,8 +57,10 @@ const bioQuery = graphql`
         introduction
         social {
           github
-          lblog
-          jblog
+        }
+        othersite {
+          name
+          url
         }
       }
     }

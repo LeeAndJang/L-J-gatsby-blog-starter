@@ -2,10 +2,10 @@ import React from 'react'
 
 import './index.scss'
 
-export const GitHubIcon = () => {
+export const GitHubIcon = ({ githubId }) => {
   return (
     <a
-      href="https://github.com/LeeAndJang/L-J-gatsby-blog-starter"
+      href={`https://github.com/` + githubId}
       className="github"
       aria-label="GitHub"
       target="_blank"
