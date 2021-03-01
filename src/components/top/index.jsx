@@ -4,8 +4,10 @@ import { GitHubIcon } from '../social-share/github-icon'
 
 import './index.scss'
 
-export const Top = ({ title, location, rootPath }) => {
+export const Top = ({ title, location, rootPath, data }) => {
   const isRoot = location.pathname === rootPath
+  const githubId = data.site.siteMetadata.social.github
+
   return (
     <div className="top">
       {!isRoot && (
@@ -13,7 +15,7 @@ export const Top = ({ title, location, rootPath }) => {
           {title}
         </Link>
       )}
-      {isRoot && <GitHubIcon />}
+      {isRoot && <GitHubIcon githubId={githubId} />}
     </div>
   )
 }

@@ -47,7 +47,7 @@ export default ({ data, pageContext, location }) => {
           >
             <Link
               to={`${location.pathname}#${encodeURI(
-                kebabCase(header.value.replace(regex, '')),
+                kebabCase(header.value.replace(regex, ''))
               )}`}
               // className="post-single__table_of_contents-list-item-link"
               activeClassName={{ color: 'red' }}
@@ -61,7 +61,7 @@ export default ({ data, pageContext, location }) => {
   )
 
   return (
-    <Layout location={location} title={title} data={data}>
+    <Layout location={location} title={title} siteMetadata={metaData}>
       <div
         style={{
           marginLeft: `auto`,
@@ -103,7 +103,7 @@ export const pageQuery = graphql`
         title
         author
         siteUrl
-        social{
+        social {
           github
         }
         comment {

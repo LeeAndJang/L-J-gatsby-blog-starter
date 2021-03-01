@@ -21,7 +21,7 @@ export const Layout = ({ data, location, title, children }) => {
 
   return (
     <React.Fragment>
-      <Top title={title} location={location} rootPath={rootPath} />
+      <Top title={title} location={location} rootPath={rootPath} data={data} />
       {/* <div> */}
       {/* <div className={'sidebar'} >
           <Sidebar />
