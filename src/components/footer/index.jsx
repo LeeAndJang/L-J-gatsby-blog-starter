@@ -2,8 +2,8 @@ import React from 'react'
 
 import './index.scss'
 
-export const Footer = ({ data }) => {
-  const metaData = data.site.siteMetadata
+export const Footer = ({ siteMetadata }) => {
+  const metaData = siteMetadata
 
   const { social, title } = metaData
 
