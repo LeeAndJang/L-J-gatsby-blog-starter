@@ -13,11 +13,12 @@ export const ThumbnailItem = ({ node, imagePath }) => {
     display: 'flex',
     boder: '1px solid black',
     flexDirection: 'row',
+    marginTop: '15px',
   }
 
   const inLeftStyle = {
     flexShrink: '1',
-    marginRight: '10px',
+    marginRight: '20px',
     flexBasis: '300px',
     height: '150px',
     overflow: 'hidden',
@@ -27,8 +28,6 @@ export const ThumbnailItem = ({ node, imagePath }) => {
     flexShrink: '1',
     flexBasis: imagePath ? '600px' : '900px',
   }
-
-  console.log(node)
 
   return (
     <Link className={`thumbnail ${TARGET_CLASS}`} to={node.fields.slug}>
