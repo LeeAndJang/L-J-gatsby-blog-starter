@@ -41,7 +41,9 @@ module.exports = {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
   },
   ga: '', // Add your google analytics tranking ID
+
   seo: {
+    //Google Analytics 연동에 필요한 host정보와 sitemap 입력하세요.
     resolve: 'gatsby-plugin-robots-txt',
     options: {
       host: 'https://dev-gogu.netlify.app',
@@ -49,4 +51,8 @@ module.exports = {
       policy: [{ userAgent: '*', allow: '/' }],
     },
   },
+
+  // Google Search Console 사이트 소유권 확인용 코드.
+  // 구글서치콘솔을 이용하시려면 이곳에 구글에서 제공한 소유권확인용 HTML태그 입력하세요.(google-site-verification)
+  gsc: 'HZflfCKdZvjC8qWB5opaiDcDmA9vTHZa-_uamDrd-Sc',
 }

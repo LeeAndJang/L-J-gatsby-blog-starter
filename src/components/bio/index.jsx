@@ -30,7 +30,9 @@ export const Bio = () => (
                 <div className="author-introduction">{introduction}</div>
                 <p className="author-socials">
                   {othersite.map((val, idx) => (
-                    <a href={val.url}>{`#` + val.name}</a>
+                    <a href={val.url} key={`othersite_a_tag_` + idx}>
+                      {`#` + val.name}
+                    </a>
                   ))}
                 </p>
               </div>
@@ -57,6 +59,7 @@ const bioQuery = graphql`
         introduction
         social {
           github
+          Portfolio
         }
         othersite {
           name
