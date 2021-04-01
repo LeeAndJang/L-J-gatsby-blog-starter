@@ -9,7 +9,7 @@ module.exports = {
     github: `LeeAndJang/L-J-gatsby-blog-starter`, // Your GitHub account
     lblog: `https://ramsbaby.netlify.app/`,
     jblog: `https://goguj.netlify.app/`,
-    portfolio: `` // Your Portfolio Url
+    Portfolio: `` // Your Portfolio Url
   },
   othersite: [
     //블로그 설명 글 밑에 표시될 타사이트들을 추가해보세요. 예:) name : 표시될이름, url : 연결될 사이트 주소
