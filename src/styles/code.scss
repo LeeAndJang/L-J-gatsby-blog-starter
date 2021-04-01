@@ -153,3 +153,7 @@ pre[class*='language-'] {
 .post-single__table_of_contents-list {
   top: 1.5rem;
 }
+
+.post-single__table_of_contents-list li a.isCurrent {
+  color: #f00;
+}
