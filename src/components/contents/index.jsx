@@ -1,5 +1,4 @@
 import React, { useMemo } from 'react'
-import { graphql } from 'gatsby'
 import { ThumbnailContainer } from '../thumbnail-container'
 import { ThumbnailItem } from '../thumbnail-item'
 import { CATEGORY_TYPE } from '../../constants'
