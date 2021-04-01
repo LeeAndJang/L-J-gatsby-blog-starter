@@ -24,7 +24,7 @@ export const Bio = () => (
               />
               <div className="author-name">
                 <span className="author-name-prefix">Written by</span>
-                <Link to={social.Portfolio} className="author-name-content">
+                <Link to={social.portfolio} className="author-name-content">
                   <span>{author}</span>
                 </Link>
                 <div className="author-introduction">{introduction}</div>
@@ -59,7 +59,7 @@ const bioQuery = graphql`
         introduction
         social {
           github
-          Portfolio
+          portfolio
         }
         othersite {
           name
