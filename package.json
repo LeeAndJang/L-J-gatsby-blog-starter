@@ -14,6 +14,7 @@
     "gatsby-plugin-google-analytics": "^2.0.17",
     "gatsby-plugin-lodash": "^3.0.5",
     "gatsby-plugin-manifest": "^2.0.24",
+    "gatsby-plugin-netlify-cms": "^4.3.16",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.10",
     "gatsby-plugin-robots-txt": "^1.5.3",
@@ -37,6 +38,7 @@
     "katex": "^0.11.1",
     "lodash": "^4.17.19",
     "mdbreact": "^4.27.0",
+    "netlify-cms-app": "^2.12.25",
     "node-sass": "^4.11.0",
     "prismjs": "^1.21.0",
     "query-string": "^6.13.1",
@@ -85,7 +87,7 @@
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "clean": "gatsby clean",    
+    "clean": "gatsby clean",
     "lh": "lighthousebot",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   }
