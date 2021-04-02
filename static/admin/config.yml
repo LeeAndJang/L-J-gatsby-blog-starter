@@ -17,9 +17,10 @@ collections:
     create: true
     slug: '{{category}}/{{slug}}'
     fields:
-      - { label: 'draft', name: 'draft', widget: 'hidden', default: false }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'hidden', default: '' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Draft', name: 'draft', widget: 'hidden', default: false }
       - { label: 'Tags', name: 'tags', widget: 'list' }
