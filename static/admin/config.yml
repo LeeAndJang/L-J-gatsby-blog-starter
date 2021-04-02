@@ -1,0 +1,25 @@
+backend:
+  name: github # Your backend name
+  repo: LeeAndJang/L-J-gatsby-blog-starter # Your git repo
+  branch: master # Your git repo name
+  base_url: https://api.netlify.com
+  site_domain: l-j-gatsby-blog-starter.netlify.com
+  auth_endpoint: auth
+  api_root: https://api.github.com
+
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    slug: '{{category}}/{{slug}}'
+    fields:
+      - { label: 'draft', name: 'draft', widget: 'hidden', default: false }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
