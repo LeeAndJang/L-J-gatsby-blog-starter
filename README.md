@@ -78,7 +78,7 @@ gatsby new my-blog-starter https://github.com/LeeAndJang/L-J-gatsby-blog-starter
 
 ```sh
 cd my-blog-starter/
-npm start
+npm run develop
 # open localhost:8000
 ```
 
